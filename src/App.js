@@ -1,10 +1,10 @@
-
 import './App.css';
+import Navbar from "./Components/Navbar/Navbar"
 
 function App() {
   return (
     <div className="App">
-      Testing 1, 2, 3
+      <Navbar/>
     </div>
   );
 }

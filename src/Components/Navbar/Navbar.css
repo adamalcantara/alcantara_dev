@@ -59,15 +59,15 @@
 }
 
 #burger div {
-    width: 25px;
-    height: 3px;
+    width: 40px;
+    height: 4px;
     background-color: black;
-    margin: 5px;
+    margin: 8px;
     transition: all 0.3s ease;
 }
 
 .line1click {
-    transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(-45deg) translate(-10px, 8px);
 }
 
 .line2click {
@@ -75,7 +75,7 @@
 }
 
 .line3click {
-    transform: rotate(45deg) translate(-5px, -6px);
+    transform: rotate(45deg) translate(-8px, -7px);
 }
 
 @media screen and (max-width: 768px) {
@@ -85,5 +85,17 @@
 
     #mobileNavActive {
         display: flex;
+    }
+
+    #logo {
+        transform: scale(0.7) rotate(-20deg);
+        margin-left: -70px;
+        margin-top: 5px;
+    }
+
+    #burger {
+        position: absolute;
+        top: 25px;
+        right: 20px;
     }
 }

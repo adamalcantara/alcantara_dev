@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Component} from 'react'
 import { Link } from "react-router-dom"
 import Logo from '../../Assets/img/alcantaradevelopment.png'
 import githublogo from "../../Assets/img/githublogo.png"
@@ -7,7 +7,8 @@ import instagramlogo from "../../Assets/img/instagramlogo.png"
 
 import "./Navbar.css"
 
-const Navbar = () => {
+class Navbar extends Component {
+    render() {
     return (
         <div id="navigation">
             <div id="mobileNavActive">
@@ -21,7 +22,7 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <nav id="navbar">
+            <div id="navbar">
                 <div id="links">
                     <Link to="/" className="links">Portfolio</Link>
                     <Link to="/about" className="links">About</Link>
@@ -38,9 +39,10 @@ const Navbar = () => {
                         <img src={instagramlogo} alt="Instagram Logo" className="linkimg" />
                     </a>
                 </div>
-            </nav>
+            </div>
         </div>
     )
+    }
 }
 
 export default Navbar

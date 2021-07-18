@@ -28,7 +28,7 @@ class Navbar extends Component {
                     </div>
                 </div>
 
-                <div id="navbar">
+                <div className={this.state.clicked ? 'navbar active' : 'navbar'}>
                     <div id="links">
                         <Link to="/" className="links">Portfolio</Link>
                         <Link to="/about" className="links">About</Link>

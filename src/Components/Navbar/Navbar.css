@@ -8,3 +8,38 @@
 #logo:hover {
     opacity: 0.5;
 }
+
+#navbar {
+    margin-top: 80px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+#links {
+    display: flex;
+    flex-direction: column;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+    font-size: 50px;
+    margin-bottom: 40px;
+    font-weight: 200;
+    opacity: 0.5;
+}
+
+.links:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+#linkimg {
+    display: flex;
+    flex-direction: column;
+}

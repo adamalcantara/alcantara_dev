@@ -14,7 +14,7 @@ const Navbar = () => {
                 <img src={Logo} alt="logo" id="logo"></img>
             </Link>
             <nav id="navbar">
-                <div id="navbar">
+                <div id="links">
                     <Link to="/" className="links">Portfolio</Link>
                     <Link to="/about" className="links">About</Link>
                     <Link to="/contact" className="links">Contact</Link>

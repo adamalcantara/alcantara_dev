@@ -9,7 +9,7 @@ import "./Navbar.css"
 
 const Navbar = () => {
     return (
-        <div>
+        <div id="navigation">
             <Link to="/" id="logoimg">
                 <img src={Logo} alt="logo" id="logo"></img>
             </Link>

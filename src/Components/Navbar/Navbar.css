@@ -1,7 +1,7 @@
 #logo {
     transform: rotate(-20deg);
-    width: 300px;
-    height: 108px;
+    width: 200px;
+    height: 75px;
     margin-top: 50px;
 }
 
@@ -9,13 +9,13 @@
     opacity: 0.5;
 }
 
-#navbar {
-    margin-top: 80px;
+#navigation {
+    display: inline-block;
+    margin-left: 40px;
 }
 
-nav {
-    display: flex;
-    flex-direction: column;
+#navbar {
+    margin-top: 80px;
 }
 
 #links {
@@ -24,6 +24,7 @@ nav {
 }
 
 .links {
+    
     text-decoration: none;
     color: black;
     font-size: 50px;
@@ -37,9 +38,17 @@ nav {
     cursor: pointer;
 }
 
-
-
 #linkimg {
     display: flex;
     flex-direction: column;
+}
+
+.linkimg {
+    width: 40px;
+    margin-bottom: 25px;
+    opacity: 0.5;
+}
+
+.linkimg:hover {
+    opacity: 1;
 }

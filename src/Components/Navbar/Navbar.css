@@ -1,0 +1,10 @@
+#logo {
+    transform: rotate(-20deg);
+    width: 300px;
+    height: 108px;
+    margin-top: 50px;
+}
+
+#logo:hover {
+    opacity: 0.5;
+}

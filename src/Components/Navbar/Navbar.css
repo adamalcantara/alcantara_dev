@@ -53,12 +53,12 @@
     opacity: 1;
 }
 
-.burger {
+#burger {
     display: none;
     cursor: pointer;
 }
 
-.burger div {
+#burger div {
     width: 25px;
     height: 3px;
     background-color: black;
@@ -66,8 +66,20 @@
     transition: all 0.3s ease;
 }
 
+.line1click {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.line2click {
+    opacity: 0;
+}
+
+.line3click {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
 @media screen and (max-width: 768px) {
-    .burger {
+    #burger {
         display: block;
     }
 

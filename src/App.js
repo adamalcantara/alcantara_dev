@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
+import { GlobalStyles } from "./Styles/globalStyles"
 import { useDarkMode } from "./Styles/useDarkMode";
 import styled from "styled-components";
 import Navbar from "./Components/Navbar/Navbar";
@@ -17,6 +18,7 @@ function App() {
   return (
     <Container>
     <Router>
+      <GlobalStyles />
       <div className="page">
         <Navbar theme={theme} toggleTheme={toggleTheme}/>
 

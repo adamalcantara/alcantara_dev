@@ -39,14 +39,17 @@
 }
 
 #linkimg {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
 }
 
 .linkimg {
     width: 40px;
-    margin-bottom: 25px;
     opacity: 0.5;
+}
+
+a {
+    margin-bottom: 25px;
 }
 
 .linkimg:hover {

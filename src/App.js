@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
+import { useDarkMode } from "./Styles/useDarkMode";
 import styled from "styled-components";
 import Navbar from "./Components/Navbar/Navbar";
 import Portfolio from "./Pages/Portfolio/Portfolio";
@@ -11,11 +12,13 @@ const Container = styled.div`
 `;
 
 function App() {
+  const [ theme, toggleTheme ] = useDarkMode();
+  
   return (
     <Container>
     <Router>
       <div className="page">
-        <Navbar />
+        <Navbar theme={theme} toggleTheme={toggleTheme}/>
 
         <div className="pageContent">
           <Route exact path="/" component={Portfolio} />

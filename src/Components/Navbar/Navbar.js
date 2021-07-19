@@ -4,6 +4,7 @@ import Logo from '../../Assets/img/alcantaradevelopment.png'
 import githublogo from "../../Assets/img/githublogo.png"
 import linkedinlogo from "../../Assets/img/linkedinlogo.png"
 import instagramlogo from "../../Assets/img/instagramlogo.png"
+import { Toggle } from "../Toggle/Toggle"
 
 import "./Navbar.css"
 
@@ -12,7 +13,11 @@ class Navbar extends Component {
 
     handleClick = () => {
         this.setState({clicked: !this.state.clicked})
+        console.log("testing out the props");
+        console.log(this.props)
     }
+
+    
 
     render() {
         return (
@@ -45,7 +50,9 @@ class Navbar extends Component {
                             <img src={instagramlogo} alt="Instagram Logo" className="linkimg" />
                         </a>
                     </div>
+                    <Toggle theme={this.props.theme} toggleTheme={this.props.toggleTheme}/>
                 </div>
+                
             </div>
         )
     }

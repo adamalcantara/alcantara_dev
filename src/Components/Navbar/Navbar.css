@@ -114,7 +114,6 @@ a {
         left: -100%;
         opacity: 0;
         position: absolute;
-        background-color: rgb(247, 247, 247);
         transition: all 0.5s ease;
         margin-top: 10px;
     }

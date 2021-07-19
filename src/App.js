@@ -23,8 +23,9 @@ function App() {
       <GlobalStyles />
       <div className="page">
         <Navbar theme={theme} toggleTheme={toggleTheme}/>
-
+        {/* <h1 id="heading">Alcantara Development</h1> */}
         <div className="pageContent">
+          
           <Route exact path="/" component={Portfolio} />
           <Route exact path="/about" component={About} />
           <Route exact path="/contact" component={Contact} />

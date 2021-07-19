@@ -1,9 +1,13 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom"
 import Logo from '../../Assets/img/alcantaradevelopment.png'
+import WhiteLogo from '../../Assets/img/alcantaradevelopmentwhite.png'
 import githublogo from "../../Assets/img/githublogo.png"
+import githublogowhite from "../../Assets/img/githublogowhite.png"
 import linkedinlogo from "../../Assets/img/linkedinlogo.png"
+import linkedinlogowhite from "../../Assets/img/linkedinlogowhite.png"
 import instagramlogo from "../../Assets/img/instagramlogo.png"
+import instagramlogowhite from "../../Assets/img/instagramlogowhite.png"
 import { Toggle } from "../Toggle/Toggle"
 
 import "./Navbar.css"
@@ -24,7 +28,7 @@ class Navbar extends Component {
             <div id="navigation">
                 <div id="mobileNavActive">
                     <Link to="/" id="logoimg">
-                        <img src={Logo} alt="logo" id="logo"></img>
+                        <img src={this.props.theme ==='light' ? Logo : WhiteLogo} alt="logo" id="logo"></img>
                     </Link>
                     <div id="burger" onClick={this.handleClick}>
                         <div id="line1" className={this.state.clicked ? 'line1click' : ''}></div>
@@ -41,13 +45,13 @@ class Navbar extends Component {
                     </div>
                     <div id="linkimg">
                         <a href="https://github.com/adamalcantara" target="_blank">
-                            <img src={githublogo} alt="GitHub Logo" className="linkimg" />
+                            <img src={this.props.theme ==='light' ? githublogo : githublogowhite} alt="GitHub Logo" className="linkimg" />
                         </a>
                         <a href="https://www.linkedin.com/in/adam-alcantara" target="_blank">
-                            <img src={linkedinlogo} alt="LinkedIn Logo" className="linkimg" />
+                            <img src={this.props.theme ==='light' ? linkedinlogo : linkedinlogowhite} alt="LinkedIn Logo" className="linkimg" />
                         </a>
                         <a href="https://www.instagram.com/alcantaradevelopment/" target="_blank">
-                            <img src={instagramlogo} alt="Instagram Logo" className="linkimg" />
+                            <img src={this.props.theme ==='light' ? instagramlogo : instagramlogowhite} alt="Instagram Logo" className="linkimg" />
                         </a>
                     </div>
                     <Toggle theme={this.props.theme} toggleTheme={this.props.toggleTheme} id="toggle"/>

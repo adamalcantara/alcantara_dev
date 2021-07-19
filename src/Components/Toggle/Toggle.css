@@ -1,0 +1,9 @@
+.themeIcon {
+    width: 40px;
+    opacity: 0.5;
+}
+
+.themeIcon:hover {
+    opacity: 1;
+    cursor: pointer;
+}

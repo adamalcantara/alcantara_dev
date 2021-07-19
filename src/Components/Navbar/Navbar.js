@@ -50,7 +50,7 @@ class Navbar extends Component {
                             <img src={instagramlogo} alt="Instagram Logo" className="linkimg" />
                         </a>
                     </div>
-                    <Toggle theme={this.props.theme} toggleTheme={this.props.toggleTheme}/>
+                    <Toggle theme={this.props.theme} toggleTheme={this.props.toggleTheme} id="toggle"/>
                 </div>
                 
             </div>

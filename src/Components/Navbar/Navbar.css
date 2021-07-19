@@ -38,8 +38,9 @@
 }
 
 #linkimg {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
+    width: 40px;
 }
 
 .linkimg {
@@ -79,6 +80,8 @@ a {
 .line3click {
     transform: rotate(45deg) translate(-8px, -7px);
 }
+
+
 
 @media screen and (max-width: 768px) {
     #navigation {
@@ -127,8 +130,9 @@ a {
         margin-top: 30px;
         text-align: center;
     }
-
+    
     #linkimg {
-        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

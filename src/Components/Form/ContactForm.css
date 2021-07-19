@@ -36,9 +36,10 @@ textarea {
 
 #submitBtn {
     margin-top: 15px;
-    width: 80px;
-    height: 30px;
-    font-size: 15px;
+    width: 84px;
+    height: 38px;
+    font-size: 20px;
+    border-radius: 5px;
 }
 
 #submitBtn:hover {

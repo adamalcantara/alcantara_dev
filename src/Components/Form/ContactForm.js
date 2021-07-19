@@ -8,11 +8,11 @@ function ContactForm() {
     return <p>Thank you for reaching out! I will respond to you shortly.</p>;
   }
   return (
-    <div>
-      <p>Use the form below to contact me. I look foward to hearing from you!</p>
+    <div id="contact">
+      <p id="contactHeader">Use the form below to contact me. I look foward to hearing from you!</p>
       <form onSubmit={handleSubmit}>
         <div id="contactForm">
-          <label htmlFor="email">
+          <label htmlFor="email" className="formLabel">
             Email Address
           </label>
           <input
@@ -25,7 +25,7 @@ function ContactForm() {
             field="email"
             errors={state.errors}
           />
-          <label htmlFor="email">
+          <label htmlFor="email" className="formLabel">
             Message
           </label>
           <textarea

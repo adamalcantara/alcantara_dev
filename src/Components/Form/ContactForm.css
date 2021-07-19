@@ -1,10 +1,33 @@
+#contact {
+    width: 100%;
+}
+
 #contactForm {
     display: flex;
     flex-direction: column;
+    width: 1000px;
+}
+
+#contactHeader {
+    font-size: 25px;
+}
+
+.formLabel {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 input {
-    margin: 15px 0;
+    font-size: 20px;
+}
+
+textarea {
+    font-size: 20px;
+}
+
+#email {
+    height: 30px;
 }
 
 #message {
@@ -16,4 +39,8 @@ input {
     width: 80px;
     height: 30px;
     font-size: 15px;
+}
+
+#submitBtn:hover {
+    cursor: pointer;
 }

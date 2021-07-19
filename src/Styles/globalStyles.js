@@ -9,6 +9,15 @@ body {
 #mobilenav {
     background-color: ${({ theme }) => theme.navcolor}
 }
+#line1 {
+    background-color: ${({ theme }) => theme.text}
+}
+#line2 {
+    background-color: ${({ theme }) => theme.text}
+}
+#line3 {
+    background-color: ${({ theme }) => theme.text}
+}
 
 `;
 

@@ -6,7 +6,7 @@ export const Toggle = ({ theme, toggleTheme }) => {
     console.log(theme)
     return (
         <div onClick={toggleTheme}>
-            { theme === 'light' ? <img src={Sun} className="themeIcon"></img> : <img src={Moon} className="themeIcon" id="moon"></img>}
+            { theme === 'light' ? <img src={Moon} className="themeIcon" id="moon"></img> : <img src={Sun} className="themeIcon"></img>}
         </div>
     )
 }

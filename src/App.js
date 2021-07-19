@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
-import { GlobalStyles } from "./Styles/globalStyles"
+import { GlobalStyles, lightTheme, darkTheme } from "./Styles/globalStyles"
 import { useDarkMode } from "./Styles/useDarkMode";
-import styled from "styled-components";
+import styled, { ThemeProvider } from "styled-components";
 import Navbar from "./Components/Navbar/Navbar";
 import Portfolio from "./Pages/Portfolio/Portfolio";
 import About from "./Pages/About/About";
@@ -14,9 +14,11 @@ const Container = styled.div`
 
 function App() {
   const [ theme, toggleTheme ] = useDarkMode();
+  const themeMode = theme === 'light' ? lightTheme : darkTheme;
   
   return (
-    <Container>
+    <ThemeProvider theme={themeMode}>
+       <Container>
     <Router>
       <GlobalStyles />
       <div className="page">
@@ -31,7 +33,8 @@ function App() {
 
     </Router>
     </Container>
-    
+    </ThemeProvider>
+  
   );
 }
 

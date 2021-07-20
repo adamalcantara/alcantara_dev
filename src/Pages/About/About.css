@@ -42,5 +42,22 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+    #aboutSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #headshot {
+        margin-right: 0px;
+    }
+
+    #testimonials {
+        flex-direction: column;
+    }
+
+    #middle {
+        padding: 0 0;
+    }
     
 }

@@ -6,7 +6,7 @@ import Resume from "../../"
 const About = () => {
     return (
         <div id="contactPage">
-            <div>
+            <div id="aboutSection">
                 <img src={Headshot} id="headshot" alt="Adam's headshot photo"></img>
                 <p id="bio">My passion for building things has eclipsed everything else in my life since I was young.  On top of that, I've always felt that a good website (and good website design) was a key factor in making a successful impression on people.  My first websites were built with Apple’s iWeb, followed by Wordpress.  They were adequate, but I always felt as though I wanted to do more, and that coding websites from scratch was the only way to get there.  Needless to say, I have always been fascinated with the potential that web development has to offer.
                     <br></br>

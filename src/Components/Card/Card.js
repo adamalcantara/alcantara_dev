@@ -11,19 +11,27 @@ import "./Card.css";
 
 function Card() {
     const [show, setShow] = useState(false);
+    const [showModal1, setShowModal1] = useState(false);
+    const [showModal2, setShowModal2] = useState(false);
+
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
+    const handleShow1 = () => setShowModal1(true)
+    const handleClose1 = () => setShowModal1(false)
+    const handleShow2 = () => setShowModal2(true)
+    const handleClose2 = () => setShowModal2(false)
+
     const cardInfo = [
-        { id: "stockchasr", text: "StockChasr", linkto: "/stockchasr", modalheading: "StockChasr", modaltext: "StockChasr Modal" },
-        { id: "andChill", text: "&Chill", linkto: "/andChill", modalheading: "&Chill", modaltext: "&Chill Modal" },
+        { id: "stockchasr", text: "StockChasr", modalheading: "StockChasr", modaltext: "StockChasr Modal", handleShow: handleShow1, handleClose: handleClose1 },
+        { id: "andChill", text: "&Chill", modalheading: "&Chill", modaltext: "&Chill Modal", handleShow: handleShow2, handleClose: handleClose2 },
     ];
 
     const renderCard = (card, index) => {
         return (
             <div>
-                <div className="card" id={card.id} key={index} onClick={handleShow}>
+                <div className="card" id={card.id} key={index} onClick={card.handleShow}>
 
                     <div className="overlay">
                         <div className="text">{card.text}</div>
@@ -31,10 +39,18 @@ function Card() {
 
                 </div>
 
-                <Modal show={show} onHide={handleClose}>
-                        <Modal.Title>{card.modalheading}</Modal.Title>
-                    <Modal.Body>{card.modaltext}</Modal.Body>
-                        <Button variant="secondary" onClick={handleClose}>
+                <Modal show={showModal1} onHide={card.handleClose}>
+                        <Modal.Title>1</Modal.Title>
+                    <Modal.Body>1</Modal.Body>
+                        <Button variant="secondary" onClick={card.handleClose}>
+                            Close
+                        </Button>
+                </Modal>
+
+                <Modal show={showModal2} onHide={card.handleClose}>
+                        <Modal.Title>2</Modal.Title>
+                    <Modal.Body>2</Modal.Body>
+                        <Button variant="secondary" onClick={card.handleClose}>
                             Close
                         </Button>
                 </Modal>

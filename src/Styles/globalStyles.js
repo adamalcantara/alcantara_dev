@@ -19,16 +19,22 @@ body {
     background-color: ${({ theme }) => theme.text}
 }
 
+.links:hover {
+    color: ${({ theme }) => theme.hover}
+}
+
 `;
 
 export const lightTheme = {
     body: '#fff',
     text: '#121212',
-    navcolor: '#fff'
+    navcolor: '#fff',
+    hover: 'black'
 };
 
 export const darkTheme = {
     body: '#121212',
     text: '#fff',
-    navcolor: '#121212'
+    navcolor: '#121212',
+    hover: 'white'
 };

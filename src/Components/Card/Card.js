@@ -31,7 +31,7 @@ function Card() {
 
                 </div>
 
-                <Modal show={show} onHide={handleClose} id={card.id}>
+                <Modal show={show} onHide={handleClose}>
                         <Modal.Title>{card.modalheading}</Modal.Title>
                     <Modal.Body>{card.modaltext}</Modal.Body>
                         <Button variant="secondary" onClick={handleClose}>

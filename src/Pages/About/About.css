@@ -1,0 +1,22 @@
+/* #contactPage {
+    width: 80%;
+} */
+
+#bio {
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+#headshot {
+    float: left;
+    width: 350px;
+    height: 350px;
+}
+
+br {
+    content: "";
+  margin: 3em;
+  display: block;
+  font-size: 24%;
+}

@@ -24,8 +24,8 @@ function Card() {
     const handleClose2 = () => setShowModal2(false)
 
     const cardInfo = [
-        { id: "stockchasr", text: "StockChasr", modalheading: "StockChasr", modaltext: "StockChasr Modal", handleShow: handleShow1, handleClose: handleClose1 },
-        { id: "andChill", text: "&Chill", modalheading: "&Chill", modaltext: "&Chill Modal", handleShow: handleShow2, handleClose: handleClose2 },
+        { id: "stockchasr", text: "StockChasr", modalheading: "StockChasr", modaltext: "StockChasr Modal", handleShow: handleShow1, handleClose: handleClose1, show: showModal1, modalTitle: "StockChasr", modalText: "StockChasr Modal" },
+        { id: "andChill", text: "&Chill", modalheading: "&Chill", modaltext: "&Chill Modal", handleShow: handleShow2, handleClose: handleClose2, show: showModal2, modalTitle: "&Chill", modalText: "&Chill Modal" },
     ];
 
     const renderCard = (card, index) => {
@@ -39,21 +39,21 @@ function Card() {
 
                 </div>
 
-                <Modal show={showModal1} onHide={card.handleClose}>
-                        <Modal.Title>1</Modal.Title>
-                    <Modal.Body>1</Modal.Body>
+                <Modal show={card.show} onHide={card.handleClose}>
+                        <Modal.Title>{card.modalTitle}</Modal.Title>
+                    <Modal.Body>{card.modalText}</Modal.Body>
                         <Button variant="secondary" onClick={card.handleClose}>
                             Close
                         </Button>
                 </Modal>
 
-                <Modal show={showModal2} onHide={card.handleClose}>
+                {/* <Modal show={showModal2} onHide={card.handleClose}>
                         <Modal.Title>2</Modal.Title>
                     <Modal.Body>2</Modal.Body>
                         <Button variant="secondary" onClick={card.handleClose}>
                             Close
                         </Button>
-                </Modal>
+                </Modal> */}
             </div>
         );
     };

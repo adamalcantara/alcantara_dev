@@ -39,12 +39,15 @@ function Card() {
 
                 </div>
 
-                <Modal show={card.show} onHide={card.handleClose}>
-                        <Modal.Title>{card.modalTitle}</Modal.Title>
+                <Modal show={card.show} onHide={card.handleClose} dialogClassName="modal-90w" className="modalArea">
+                        <Modal.Title className="modalBox">{card.modalTitle}</Modal.Title>
                     <Modal.Body>{card.modalText}</Modal.Body>
-                        <Button variant="secondary" onClick={card.handleClose}>
+                    <div id="modalFooter">
+                        <Button variant="secondary" onClick={card.handleClose} id="modalBtn">
                             Close
                         </Button>
+                        </div>
+                        
                 </Modal>
 
                 {/* <Modal show={showModal2} onHide={card.handleClose}>

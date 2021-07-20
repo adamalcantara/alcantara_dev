@@ -1,0 +1,12 @@
+
+
+#modalFooter {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#modalBtn {
+    width: 80px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}

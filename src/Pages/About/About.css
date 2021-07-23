@@ -67,11 +67,23 @@ p {
     }
 
     #headshot {
+        width: 80%;
+        height: 80%;
+    }
+
+    #bio {
+        width: 80%;
+    }
+
+    #headshot {
         margin-right: 0px;
     }
 
     #testimonials {
         flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
     }
 
     #middle {

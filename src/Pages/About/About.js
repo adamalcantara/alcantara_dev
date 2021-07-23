@@ -1,7 +1,7 @@
 import React from 'react'
 import "./About.css"
 import Headshot from '../../Assets/img/adam_headshot_small.jpg'
-import Resume from "../../"
+import Resume from "../../Assets/Adam_Alcantara_coding_resume.pdf"
 
 const About = () => {
     return (
@@ -17,6 +17,9 @@ const About = () => {
                     In my spare time, I can be found building guitars, or taking photographs.
                     <br></br>
                     Contact me for more information.  I’ll build something awesome for you.</p>
+            </div>
+            <div id="resume">
+                <a href={Resume} target="_blank" id="resumelink">Click Here To View My Résumé</a>
             </div>
             <div id="testimonials">
                 <div className="testimonial">

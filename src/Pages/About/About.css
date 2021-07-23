@@ -34,6 +34,16 @@ p {
     font-size: 17px;
 }
 
+#resume {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+#resumelink {
+    text-decoration: underline;
+}
+
 .testimonial {
     /* margin: 0 20px; */
     line-height: 1.8;

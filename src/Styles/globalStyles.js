@@ -18,23 +18,29 @@ body {
 #line3 {
     background-color: ${({ theme }) => theme.text}
 }
-
 .links:hover {
     color: ${({ theme }) => theme.hover}
 }
-
+a {
+    color: ${({ theme }) => theme.text};
+}
+a:hover {
+    color: ${({ theme }) => theme.texthover};
+}
 `;
 
 export const lightTheme = {
     body: '#fff',
     text: '#121212',
     navcolor: '#fff',
-    hover: 'black'
+    hover: 'black',
+    texthover: 'rgb(116, 116, 116, 0.5)'
 };
 
 export const darkTheme = {
     body: '#121212',
     text: '#fff',
     navcolor: '#121212',
-    hover: 'white'
+    hover: 'white',
+    texthover: 'rgb(116, 116, 116, 0.5)'
 };

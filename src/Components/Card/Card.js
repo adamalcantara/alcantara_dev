@@ -9,6 +9,9 @@ import ModalBody from 'react-bootstrap/ModalBody'
 import ModalFooter from 'react-bootstrap/ModalFooter'
 import "./Card.css";
 
+//image imports
+import StockChasrScreenshot from "../../Assets/screenshots/stockchasrscreenshot.png"
+
 function Card() {
     const [show, setShow] = useState(false);
     const [showModal1, setShowModal1] = useState(false);
@@ -24,7 +27,7 @@ function Card() {
     const handleClose2 = () => setShowModal2(false)
 
     const cardInfo = [
-        { id: "stockchasr", text: "StockChasr", handleShow: handleShow1, handleClose: handleClose1, show: showModal1, modalTitle: "StockChasr", modalText: "StockChasr was a project that was my final project" },
+        { id: "stockchasr", text: "StockChasr", handleShow: handleShow1, handleClose: handleClose1, show: showModal1, modalTitle: "StockChasr", modalText: "StockChasr was a project that was my final project", img: StockChasrScreenshot },
         { id: "andChill", text: "&Chill", handleShow: handleShow2, handleClose: handleClose2, show: showModal2, modalTitle: "&Chill", modalText: "&Chill Modal" },
     ];
 
@@ -41,7 +44,10 @@ function Card() {
 
                 <Modal show={card.show} onHide={card.handleClose} dialogClassName="modal-90w" className="modalArea">
                         <Modal.Title className="modalBox">{card.modalTitle}</Modal.Title>
-                    <Modal.Body>{card.modalText}</Modal.Body>
+                    <Modal.Body id="modaltext">
+                        <img src={card.img} id="img"></img>
+                        <p>{card.modalText}</p>
+                    </Modal.Body>
                     <div id="modalFooter">
                         <Button variant="secondary" onClick={card.handleClose} id="modalBtn">
                             Close

@@ -21,6 +21,7 @@ const About = () => {
             <div id="resume">
                 <a href={Resume} target="_blank" id="resumelink">Click Here To View My Résumé</a>
             </div>
+            <h3>Testimonials</h3>
             <div id="testimonials">
                 <div className="testimonial">
                     <p>"I had the pleasure of being Adam's Teaching Assistant when he attended UCF's in-depth, 12 week full stack web development bootcamp. Adam worked incredibly hard during his time with us and maintained the highest possible grade average. He and I often worked together outside of class on homework issues, which was a testament to the maximum amount of effort he put in. Throughout the program, Adam learned HTML, CSS, JavaScript, jQuery, RESTFUL APIs, SQL with MySQL, NoSQL with MongoDB, React, and the MERN stack.

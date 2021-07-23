@@ -1,4 +1,14 @@
+#modalBox {
+    width: 80%;
+}
 
+.modal-90w {
+    max-width: 80% !important;
+}
+
+#img {
+    width: 100%;
+}
 
 #modalFooter {
     display: flex;

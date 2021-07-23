@@ -24,10 +24,15 @@ br {
   font-size: 24%;
 }
 
+h3 {
+    text-align: center;
+    margin-top: 50px;
+}
+
 #testimonials {
     display: flex;
     flex-direction: row;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 p {
@@ -41,7 +46,7 @@ p {
 }
 
 #resumelink {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .testimonial {

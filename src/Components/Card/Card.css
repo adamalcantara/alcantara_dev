@@ -56,6 +56,12 @@
     background-position: center;
 }
 
+#cinepare {
+    background-image: url(../../Assets/card/cinepare.png);
+    background-size: cover;
+    background-position: center;
+}
+
 .modalBox {
     margin-top: 10px;
     margin-left: 10px;

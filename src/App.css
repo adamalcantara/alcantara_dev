@@ -21,4 +21,7 @@
     .page {
         flex-direction: column;
     }
+    .pageContent {
+        margin-top: 90px;
+    }
 }

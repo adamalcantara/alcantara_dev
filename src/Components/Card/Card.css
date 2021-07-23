@@ -74,6 +74,12 @@
     background-position: center;
 }
 
+#codequiz {
+    background-image: url(../../Assets/card/codequiz.png);
+    background-size: cover;
+    background-position: center;
+}
+
 .modalBox {
     margin-top: 10px;
     margin-left: 10px;

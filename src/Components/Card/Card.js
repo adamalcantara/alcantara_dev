@@ -15,6 +15,7 @@ import andChillScreenshot from "../../Assets/screenshots/andchillscreenshot.png"
 import CinePareScreenshot from "../../Assets/screenshots/cineparescreenshot.png"
 import PhotoGalleryScreenshot from "../../Assets/screenshots/galleryscreenshot.png"
 import WeatherDashScreenshot from "../../Assets/screenshots/weatherdash.png"
+import CodeQuizScreenshot from "../../Assets/screenshots/codequiz.png"
 
 function Card() {
     const [show, setShow] = useState(false);
@@ -23,6 +24,7 @@ function Card() {
     const [showModal3, setShowModal3] = useState(false);
     const [showModal4, setShowModal4] = useState(false);
     const [showModal5, setShowModal5] = useState(false);
+    const [showModal6, setShowModal6] = useState(false);
 
     const handleShow1 = () => setShowModal1(true)
     const handleClose1 = () => setShowModal1(false)
@@ -34,6 +36,8 @@ function Card() {
     const handleClose4 = () => setShowModal4(false)
     const handleShow5 = () => setShowModal5(true)
     const handleClose5 = () => setShowModal5(false)
+    const handleShow6 = () => setShowModal6(true)
+    const handleClose6 = () => setShowModal6(false)
 
     const cardInfo = [
         { id: "stockchasr", text: "StockChasr", handleShow: handleShow1, handleClose: handleClose1, show: showModal1, modalTitle: "StockChasr", modalText1: "Using the Market Stack API, and the Polygon API, my final group project for my coding boot camp involved building a stock application that lets users create a watch list and track stocks they might want to buy.  The greatest undertaking for me in this project was creating the interactive chart that users see once they search for a stock.", modalText2: "StockChasr was built using React as the framework, and I was primarily responsible for the chart, which used CanvasJS, the look of the dashboard, which used Material UI, and the styling which was done with CSS.", img: StockChasrScreenshot, project: "https://stockchasr.herokuapp.com/", github: "https://github.com/adamalcantara/stockchasr" },
@@ -41,7 +45,7 @@ function Card() {
         { id: "cinepare", text: "CinePare", handleShow: handleShow3, handleClose: handleClose3, show: showModal3, modalTitle: "CinePare", modalText1: "Based on the idea that great indecisiveness can come about when picking what movie to watch, the first group project of my boot camp aims to give users base statistics about movies they want to watch in order to help them make decisions.", modalText2: "Built with HTML, CSS, and JavaScript, this uses the OMDb and TMDb APIs in order to display data about the movies the user searches.", img: CinePareScreenshot, project: "https://adamalcantara.github.io/cinepare/", github: "https://github.com/adamalcantara/cinepare" },
         { id: "photogallery", text: "PhotoGallery", handleShow: handleShow4, handleClose: handleClose4, show: showModal4, modalTitle: "Photo Gallery", modalText1: "A predecessor to my new photography website for my freelance business, this project was built as an experiment to see if I could get a photo gallery to look and function the way I wanted it to on the final site.", modalText2: "This uses HTML, CSS, and JavaScript.  JavaScript is responsible for placing the opened images on the page in a lightbox format, and moving from one image to the next when the time comes.", img: PhotoGalleryScreenshot, project: "https://adamalcantara.github.io/photo_gallery/", github: "https://github.com/adamalcantara/photo_gallery" },
         { id: "weatherdash", text: "Weather Dashboard", handleShow: handleShow5, handleClose: handleClose5, show: showModal5, modalTitle: "Weather Dashboard", modalText1: "Using JavaScript and the Open Weather API, this application gets the current weather for users, as well as the five day forecast.", modalText2: "Additionally, local storage stores their recently searched cities so that they can easily pull up those results.", img: WeatherDashScreenshot, project: "https://adamalcantara.github.io/weather_dashboard/", github: "https://github.com/adamalcantara/weather_dashboard" },
-        { id: "weatherdash", text: "Weather Dashboard", handleShow: handleShow5, handleClose: handleClose5, show: showModal5, modalTitle: "Weather Dashboard", modalText1: "Using JavaScript and the Open Weather API, this application gets the current weather for users, as well as the five day forecast.", modalText2: "Additionally, local storage stores their recently searched cities so that they can easily pull up those results.", img: WeatherDashScreenshot, project: "https://adamalcantara.github.io/weather_dashboard/", github: "https://github.com/adamalcantara/weather_dashboard" },
+        { id: "codequiz", text: "Code Quiz", handleShow: handleShow6, handleClose: handleClose6, show: showModal6, modalTitle: "Code Quiz", modalText1: "Using an array of questions, this quiz is created and run using JavaScript, and also using elements of HTML and CSS. When the user gets a question wrong, 10 seconds is deducted from the clock.", modalText2: "The remaining time on the clock is then recorded as their score, and they can input their initials, and see their score and initials on the high scores page. The data will remain on the high scores page, even when the user leaves the page.", img: CodeQuizScreenshot, project: "https://adamalcantara.github.io/code_quiz/", github: "https://github.com/adamalcantara/code_quiz" },
 
     ];
 

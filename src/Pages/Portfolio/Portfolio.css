@@ -1,0 +1,7 @@
+@media screen and (max-width: 768px) {
+    .portfolioSection {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

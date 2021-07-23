@@ -83,7 +83,7 @@
 .modalBox {
     margin-top: 10px;
     margin-left: 10px;
-    font-size: 30px;
+    font-size: 45px;
 }
 
 .modal-90w {
@@ -97,9 +97,15 @@
     margin-bottom: 20px;
 }
 
-#img {
+#modalImg {
     width: 80%;
     box-shadow: 0 0 30px rgba(189, 189, 189, 0.5);
+}
+
+#modalContent {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #modalFooter {

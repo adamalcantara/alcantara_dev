@@ -64,13 +64,15 @@ function Card() {
                     <Modal.Title className="modalBox">{card.modalTitle}</Modal.Title>
                     <Modal.Body id="modaltext">
                         <div id="imgDiv">
-                        <img src={card.img} id="img"></img>
+                        <img src={card.img} id="modalImg"></img>
                         </div>
+                        <div id="modalContent">
                         <p>{card.modalText1}</p>
                         <p>{card.modalText2}</p>
                         <div id="modalBtns">
                         <a href={card.project} target="_blank" className="modalBtns">Deployed Project</a>
                         <a href={card.github} target="_blank" className="modalBtns">Github Repository</a>
+                        </div>
                         </div>
                     </Modal.Body>
                     <div id="modalFooter">

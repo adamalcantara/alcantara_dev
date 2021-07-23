@@ -1,3 +1,61 @@
+.card {
+    background-color: dodgerblue !important;
+    color: white;
+    height: 300px;
+    width: 250px;
+    border-radius: 10px !important;
+    border: none !important;
+    box-shadow: 0 0 30px rgb(174, 174, 174);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+    border-radius: 10px !important;
+    border: none;
+}
+
+.card:hover .overlay {
+    opacity: .7;
+    cursor: pointer;
+}
+
+/* Card overlay text */
+.text {
+    color: white;
+    font-weight: 500;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Individual card ids */
+
+#stockchasr {
+    background-image: url(../../Assets/card/stockchasr.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#andChill {
+    background-image: url(../../Assets/card/and_chill.png);
+    background-size: cover;
+    background-position: center;
+}
+
 #modalBox {
     width: 80%;
 }
@@ -19,4 +77,12 @@
     width: 80px;
     margin-right: 10px;
     margin-bottom: 10px;
+}
+
+/* Styling the actual container that contains all of the cards */
+.container {
+    display: grid;
+    grid-gap: 100px;
+    grid-template-columns: repeat(4, 1fr);
+    float: left;
 }

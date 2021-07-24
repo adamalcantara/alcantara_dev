@@ -24,7 +24,7 @@ const About = () => {
             <h3>Testimonials</h3>
             <div id="testimonials">
                 <div className="testimonial">
-                    <p>"I had the pleasure of being Adam's Teaching Assistant when he attended UCF's in-depth, 12 week full stack web development bootcamp. Adam worked incredibly hard during his time with us and maintained the highest possible grade average. He and I often worked together outside of class on homework issues, which was a testament to the maximum amount of effort he put in. Throughout the program, Adam learned HTML, CSS, JavaScript, jQuery, RESTFUL APIs, SQL with MySQL, NoSQL with MongoDB, React, and the MERN stack.
+                    <p>"I had the pleasure of being Adam's Teaching Assistant when he attended UCF's in-depth, 12 week full stack web development bootcamp. Adam worked incredibly hard during his time with us and maintained the highest possible grade average. He and I often worked together outside of class on homework issues, which was a testament to the maximum amount of effort he put in.
                         <br></br>
                         Adam is a team player. He has a great attitude, a strong work ethic, and is generally a delight to be around. He is a multi-talented individual with a strong background in photography, design, and development. Any employer who adds him to their roster will find great value added to their team."</p>
                     <p>- Dan Rosenbaum (Boot Camp TA)</p>

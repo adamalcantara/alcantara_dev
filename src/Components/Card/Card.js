@@ -87,7 +87,7 @@ function Card() {
         );
     };
 
-    return <div className="container">
+    return <div className="portfolioContainer">
         {cardInfo.map(renderCard)}
     </div>;
 }

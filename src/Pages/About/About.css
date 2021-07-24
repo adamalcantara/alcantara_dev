@@ -59,7 +59,7 @@ p {
 }
 
 #middle {
-    padding: 0 40px;
+    margin: 0 40px;
 }
 
 @media screen and (max-width: 1500px) {

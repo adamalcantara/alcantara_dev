@@ -27,6 +27,9 @@ a {
 a:hover {
     color: ${({ theme }) => theme.texthover};
 }
+.aboutPage {
+    color: ${({ theme }) => theme.abouttext};
+}
 `;
 
 export const lightTheme = {
@@ -34,7 +37,8 @@ export const lightTheme = {
     text: '#121212',
     navcolor: '#fff',
     hover: 'black',
-    texthover: 'rgb(116, 116, 116, 0.5)'
+    texthover: 'rgb(116, 116, 116, 0.5)',
+    abouttext:'#121212'
 };
 
 export const darkTheme = {
@@ -42,5 +46,6 @@ export const darkTheme = {
     text: '#fff',
     navcolor: '#121212',
     hover: 'white',
-    texthover: 'rgb(116, 116, 116, 0.5)'
+    texthover: 'rgb(116, 116, 116, 0.5)',
+    abouttext: '#dbdbdb'
 };

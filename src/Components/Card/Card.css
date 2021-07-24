@@ -18,7 +18,7 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgb(0, 0, 0, 0.7);
+    background-color: rgb(0, 0, 0, 0.5);
     border-radius: 10px !important;
     border: none;
 }

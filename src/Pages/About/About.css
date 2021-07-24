@@ -1,6 +1,8 @@
-/* #contactPage {
+#aboutPage {
     width: 80%;
-} */
+    margin-left: auto;
+    margin-right: auto;
+}
 
 #bio {
     font-size: 20px;
@@ -60,6 +62,9 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+    #aboutPage {
+        width: 90%;
+    }
     #aboutSection {
         display: flex;
         flex-direction: column;

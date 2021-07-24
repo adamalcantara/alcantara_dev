@@ -142,14 +142,14 @@
 .container {
     display: grid;
     grid-gap: 100px;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 250px);
     float: left;
     margin-left: -100px;
 }
 
 @media screen and (max-width: 2450px) {
     .container {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(5, 250px);
         margin-left: auto;
         margin-right: auto;
     }
@@ -157,9 +157,7 @@
 
 @media screen and (max-width: 2200px) {
     .container {
-        grid-template-columns: repeat(4, 1fr);
-        margin-left: auto;
-        margin-right: auto;
+        grid-template-columns: repeat(4, 250px);
     }
     #modalImg {
         width: 95%;
@@ -171,17 +169,13 @@
 
 @media screen and (max-width: 1800px) {
     .container {
-        grid-template-columns: repeat(3, 1fr);
-        margin-left: auto;
-        margin-right: auto;
+        grid-template-columns: repeat(3, 250px);
     }
 }
 
 @media screen and (max-width: 1300px) {
     .container {
-        grid-template-columns: repeat(2, 1fr);
-        margin-left: auto;
-        margin-right: auto;
+        grid-template-columns: repeat(2, 250px);
     }
 }
 
@@ -189,14 +183,15 @@
 @media screen and (max-width: 900px) {
     .container {
         grid-gap: 50px;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 
 @media screen and (max-width: 768px) {
     .container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 250px);
+        grid-gap: 40px;
+        padding-right: 0px !important;
+        padding-left: 0px !important;
     }
     .modal-90w {
         max-width: 100% !important;
@@ -205,7 +200,7 @@
 
 @media screen and (max-width: 600px) {
     .container {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 250px);
         display: flex;
         flex-direction: column;
         align-items: center;

@@ -6,13 +6,19 @@
 @media screen and (max-width: 1400px) {
     #contactPage {
         width: 100%;
+        margin-left:auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width: 1200px) {
+    #contactPage {
+        width: 90%;
     }
 }
 
 @media screen and (max-width: 768px) {
     #contactPage {
         width: 80%;
-        margin-left:auto;
-        margin-right: auto;
+        
     }
 }

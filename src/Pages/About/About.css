@@ -61,6 +61,19 @@ p {
     padding: 0 40px;
 }
 
+@media screen and (max-width: 1500px) {
+    #aboutPage {
+        margin-bottom: 30px;
+    }
+    #testimonials {
+        flex-direction: column;
+    }
+
+    #middle {
+        padding: 0 0;
+    }
+}
+
 @media screen and (max-width: 768px) {
     #aboutPage {
         width: 90%;
@@ -85,14 +98,9 @@ p {
     }
 
     #testimonials {
-        flex-direction: column;
         margin-left: auto;
         margin-right: auto;
         width: 80%;
-    }
-
-    #middle {
-        padding: 0 0;
     }
     
 }

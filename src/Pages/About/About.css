@@ -63,7 +63,7 @@ p {
 }
 
 #right {
-    margin-left: 40px
+    margin-left: 40px;
 }
 
 #middle {
@@ -99,14 +99,12 @@ p {
     #headshot {
         width: 80%;
         height: 80%;
+        margin-bottom: 30px;
+        margin-right: 0px;
     }
 
     #bio {
         width: 80%;
-    }
-
-    #headshot {
-        margin-right: 0px;
     }
 
     #testimonials {
@@ -115,4 +113,11 @@ p {
         width: 80%;
     }
     
+    #right {
+        margin-left: 0;
+    }
+    
+    #middle {
+        margin: 0 0;
+    }
 }

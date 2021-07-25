@@ -55,7 +55,15 @@ p {
 .testimonial {
     /* margin: 0 20px; */
     line-height: 1.8;
-    width: 33.3%;
+    width: 50%;
+}
+
+#left {
+    margin-right: 40px;
+}
+
+#right {
+    margin-left: 40px
 }
 
 #middle {

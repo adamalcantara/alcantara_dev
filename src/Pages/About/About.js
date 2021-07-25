@@ -23,17 +23,17 @@ const About = () => {
             </div>
             <h3>Testimonials</h3>
             <div id="testimonials">
-                <div className="testimonial">
+                <div className="testimonial" id="left">
                     <p>"I had the pleasure of being Adam's Teaching Assistant when he attended UCF's in-depth, 12 week full stack web development bootcamp. Adam worked incredibly hard during his time with us and maintained the highest possible grade average. He and I often worked together outside of class on homework issues, which was a testament to the maximum amount of effort he put in.
                         <br></br>
                         Adam is a team player. He has a great attitude, a strong work ethic, and is generally a delight to be around. He is a multi-talented individual with a strong background in photography, design, and development. Any employer who adds him to their roster will find great value added to their team."</p>
                     <p>- Dan R. (Boot Camp TA)</p>
                 </div>
-                <div className="testimonial" id="middle">
+                {/* <div className="testimonial" id="middle">
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                     <p>-Name</p>
-                </div>
-                <div className="testimonial">
+                </div> */}
+                <div className="testimonial" id="right">
                     <p>"It is rare to find a standout talent like Adam, I had the pleasure of being his classmate at the UCF coding bootcamp.
                         <br></br>
                         Adam’s eye for design and knowledge in web development was a great asset during multiple group projects.

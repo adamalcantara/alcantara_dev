@@ -80,6 +80,13 @@ p {
     .testimonial {
         width: 100%;
     }
+    #right {
+        margin-left: 0;
+    }
+    
+    #middle {
+        margin: 0 0;
+    }
 
     #middle {
         margin: 0 0;
@@ -113,11 +120,5 @@ p {
         width: 80%;
     }
     
-    #right {
-        margin-left: 0;
-    }
     
-    #middle {
-        margin: 0 0;
-    }
 }

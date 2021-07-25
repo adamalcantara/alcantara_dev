@@ -39,9 +39,9 @@ class Navbar extends Component {
 
                 <div className={this.state.clicked ? 'navbar active' : 'navbar'} id="mobilenav">
                     <div id="links">
-                        <Link to="/" className="links">Portfolio</Link>
-                        <Link to="/about" className="links">About</Link>
-                        <Link to="/contact" className="links">Contact</Link>
+                        <Link to="/" className="links" onClick={this.handleClick}>Portfolio</Link>
+                        <Link to="/about" className="links" onClick={this.handleClick}>About</Link>
+                        <Link to="/contact" className="links" onClick={this.handleClick}>Contact</Link>
                     </div>
                     <div id="linkimg">
                         <a href="https://github.com/adamalcantara" target="_blank">

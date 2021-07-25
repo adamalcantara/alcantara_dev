@@ -30,6 +30,12 @@ a:hover {
 .aboutPage {
     color: ${({ theme }) => theme.abouttext};
 }
+#photoLink {
+    color: ${({ theme }) => theme.abouttext};
+}
+#photoLink:hover {
+    color: ${({ theme }) => theme.texthover};
+}
 `;
 
 export const lightTheme = {

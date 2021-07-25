@@ -5,13 +5,21 @@ import "./ContactForm.css"
 function ContactForm() {
   const [state, handleSubmit] = useForm("xbjqkvbl");
   if (state.succeeded) {
-    return <p>Thank you for reaching out! I will respond to you shortly.</p>;
+    return <p id="succeeded">Thank you for reaching out! I will respond to you shortly.</p>;
   }
   return (
     <div id="contact">
       <p id="contactHeader">Use the form below to contact me. I look foward to hearing from you!</p>
       <form onSubmit={handleSubmit}>
         <div id="contactForm">
+          <label htmlFor="name" className="formLabel">
+            Name
+          </label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+          />
           <label htmlFor="email" className="formLabel">
             Email Address
           </label>

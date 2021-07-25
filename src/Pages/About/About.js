@@ -14,7 +14,7 @@ const About = () => {
                     <br></br>
                     When it comes to web development, I am passionate about dynamic, intuitive user experiences.  I can be described as driven, ambitious, and always looking for a new challenge to pursue.
                     <br></br>
-                    In my spare time, I can be found building guitars, or taking photographs.
+                    In my spare time, I can be found building guitars, or <a href="https://www.adamalcantara.com/" id="photoLink" target="_blank">taking photographs</a>.
                     <br></br>
                     Contact me for more information.  I’ll build something awesome for you.</p>
             </div>

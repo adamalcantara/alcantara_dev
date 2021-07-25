@@ -12,6 +12,10 @@
     font-size: 25px;
 }
 
+#succeeded {
+    font-size: 25px;
+}
+
 .formLabel {
     font-size: 20px;
     margin-top: 15px;
@@ -25,6 +29,11 @@ input {
 textarea {
     font-size: 20px;
 }
+
+#name {
+    height: 30px;
+}
+
 
 #email {
     height: 30px;
@@ -40,6 +49,14 @@ textarea {
     height: 38px;
     font-size: 20px;
     border-radius: 5px;
+    border: none;
+    background-color: #616a71;
+    color: white;
+}
+
+#submitBtn:hover {
+    background-color: #52585f;
+    color: white
 }
 
 #submitBtn:hover {

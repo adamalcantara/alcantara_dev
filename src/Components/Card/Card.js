@@ -16,15 +16,17 @@ import CinePareScreenshot from "../../Assets/screenshots/cineparescreenshot.png"
 import PhotoGalleryScreenshot from "../../Assets/screenshots/galleryscreenshot.png"
 import WeatherDashScreenshot from "../../Assets/screenshots/weatherdash.png"
 import CodeQuizScreenshot from "../../Assets/screenshots/codequiz.png"
+import FinishCheckerScreenshot from "../../Assets/screenshots/finishcheckerscreenshot.png"
 
 function Card() {
-    const [show, setShow] = useState(false);
     const [showModal1, setShowModal1] = useState(false);
     const [showModal2, setShowModal2] = useState(false);
     const [showModal3, setShowModal3] = useState(false);
     const [showModal4, setShowModal4] = useState(false);
     const [showModal5, setShowModal5] = useState(false);
     const [showModal6, setShowModal6] = useState(false);
+    const [showModal7, setShowModal7] = useState(false);
+
 
     const handleShow1 = () => setShowModal1(true)
     const handleClose1 = () => setShowModal1(false)
@@ -38,9 +40,12 @@ function Card() {
     const handleClose5 = () => setShowModal5(false)
     const handleShow6 = () => setShowModal6(true)
     const handleClose6 = () => setShowModal6(false)
+    const handleShow7 = () => setShowModal7(true)
+    const handleClose7 = () => setShowModal7(false)
 
     const cardInfo = [
         { id: "stockchasr", text: "StockChasr", handleShow: handleShow1, handleClose: handleClose1, show: showModal1, modalTitle: "StockChasr", modalText1: "Using the Market Stack API, and the Polygon API, my final group project for my coding boot camp involved building a stock application that lets users create a watch list and track stocks they might want to buy.  The greatest undertaking for me in this project was creating the interactive chart that users see once they search for a stock.", modalText2: "StockChasr was built using React as the framework, and I was primarily responsible for the chart, which used CanvasJS, the look of the dashboard, which used Material UI, and the styling which was done with CSS.", img: StockChasrScreenshot, project: "https://stockchasr.herokuapp.com/", github: "https://github.com/adamalcantara/stockchasr" },
+        { id: "finishchecker", text: "Finish Checker", handleShow: handleShow7, handleClose: handleClose7, show: showModal7, modalTitle: "Finish Checker", modalText1: "Using the Market Stack API, and the Polygon API, my final group project for my coding boot camp involved building a stock application that lets users create a watch list and track stocks they might want to buy.  The greatest undertaking for me in this project was creating the interactive chart that users see once they search for a stock.", modalText2: "StockChasr was built using React as the framework, and I was primarily responsible for the chart, which used CanvasJS, the look of the dashboard, which used Material UI, and the styling which was done with CSS.", img: StockChasrScreenshot, project: "https://stockchasr.herokuapp.com/", github: "https://github.com/adamalcantara/stockchasr" },
         { id: "andChill", text: "&Chill", handleShow: handleShow2, handleClose: handleClose2, show: showModal2, modalTitle: "&Chill", modalText1: "Built primaily with Handlebars, this application allows users to sign up and create an account. Once signed up, users will be matched with other users whose movie watching preferences match their own.", modalText2: "&Chill was built using Handlebars. I was responsible for the routing of the Handlebars files, the back end work which was done with SQL, and some of the CSS", img: andChillScreenshot, project: "https://and--chill.herokuapp.com/", github: "https://github.com/adamalcantara/andChill" },
         { id: "cinepare", text: "CinePare", handleShow: handleShow3, handleClose: handleClose3, show: showModal3, modalTitle: "CinePare", modalText1: "Based on the idea that great indecisiveness can come about when picking what movie to watch, the first group project of my boot camp aims to give users base statistics about movies they want to watch in order to help them make decisions.", modalText2: "Built with HTML, CSS, and JavaScript, this uses the OMDb and TMDb APIs in order to display data about the movies the user searches.", img: CinePareScreenshot, project: "https://adamalcantara.github.io/cinepare/", github: "https://github.com/adamalcantara/cinepare" },
         { id: "photogallery", text: "PhotoGallery", handleShow: handleShow4, handleClose: handleClose4, show: showModal4, modalTitle: "Photo Gallery", modalText1: "A predecessor to my new photography website for my freelance business, this project was built as an experiment to see if I could get a photo gallery to look and function the way I wanted it to on the final site.", modalText2: "This uses HTML, CSS, and JavaScript.  JavaScript is responsible for placing the opened images on the page in a lightbox format, and moving from one image to the next when the time comes.", img: PhotoGalleryScreenshot, project: "https://adamalcantara.github.io/photo_gallery/", github: "https://github.com/adamalcantara/photo_gallery" },

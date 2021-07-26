@@ -5,7 +5,7 @@
   [Alcantara Development](https://alcantaradevelopment.com/)
 
   ## Description 
-My coding portfolio, which is built in React, that shows all my latest work.
+My coding portfolio where I will showcase all my latest work. This was built in React, using React Bootstrap for the modals. It features a separate mobile navigation, and a dark/light mode for users who have a preference.
   ## Table of Contents 
 
   * [Installation](#installation)

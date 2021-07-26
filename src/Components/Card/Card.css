@@ -79,6 +79,12 @@
     background-position: center;
 }
 
+#finishchecker {
+    background-image: url(../../Assets/card/finishchecker.png);
+    background-size: cover;
+    /* background-position: center; */
+}
+
 .modalBox {
     margin-top: 10px;
     margin-left: 10px;
